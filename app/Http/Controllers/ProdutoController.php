@@ -13,8 +13,17 @@ class ProdutoController extends Controller
     public function index()
     {
        // return "index";
-       $produtos = \App\Models\Produto::all();
-       return dd($produtos);
+      // $produtos = \App\Models\Produto::all();
+      // return dd($produtos);
+
+      $nome= "Alisson";
+      $idade= 30;
+      $html= "<h1>Treinamento de codigos laravel</h1>";
+
+      return view ('site/empresa', compact('nome', 'idade', 'html'));
+    
+      
+
     }
 
     /**
