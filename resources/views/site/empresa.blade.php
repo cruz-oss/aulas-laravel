@@ -1,0 +1,1 @@
+<h1> Essa pagina é um treinamento de Laravel</h1>

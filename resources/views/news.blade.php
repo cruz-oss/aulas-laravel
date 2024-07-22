@@ -1,0 +1,1 @@
+<h1>News está sendo redirecionada</h1>
