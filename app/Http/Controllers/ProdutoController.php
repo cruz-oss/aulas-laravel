@@ -19,8 +19,9 @@ class ProdutoController extends Controller
       $nome= "Alisson";
       $idade= 30;
       $html= "<h1>Treinamento de codigos laravel</h1>";
+      $frutas= [];
 
-      return view ('site/home', compact('nome', 'idade', 'html'));
+      return view ('site/home', compact('nome', 'idade', 'html', 'frutas'));
     
       
 

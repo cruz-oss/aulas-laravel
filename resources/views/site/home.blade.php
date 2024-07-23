@@ -2,10 +2,15 @@
 @section('title', 'Essa é a pagina HOME')
 @section('conteudo')
 
- {{-- Isso é um comentário --}}
+ {{-- Estrutura de repetição--}}
 
- {{-- isset($nome) ? 'exite' : 'não existe' --}}
+ @forelse ($frutas as $fruta)
+      
+     {{ $fruta }} <br>
 
- {{$teste ?? 'padrão'}}
+     @empty 
+     array está vazio
+     
+ @endforelse
 
 @endsection
