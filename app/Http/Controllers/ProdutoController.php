@@ -20,7 +20,7 @@ class ProdutoController extends Controller
       $idade= 30;
       $html= "<h1>Treinamento de codigos laravel</h1>";
 
-      return view ('site/empresa', compact('nome', 'idade', 'html'));
+      return view ('site/home', compact('nome', 'idade', 'html'));
     
       
 
