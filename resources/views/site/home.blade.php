@@ -2,15 +2,14 @@
 @section('title', 'Essa é a pagina HOME')
 @section('conteudo')
 
- {{-- Estrutura de repetição--}}
+ @include('includes.mensagem', ['titulo' => 'Mensagem de sucesso!'])
 
- @forelse ($frutas as $fruta)
-      
-     {{ $fruta }} <br>
+ @component('components.sidebar')
 
-     @empty 
-     array está vazio
+  @slot('paragrafo')
+      Texto qualquer vindo do slot!
+  @endslot
      
- @endforelse
+ @endcomponent
 
 @endsection
